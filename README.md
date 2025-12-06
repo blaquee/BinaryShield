@@ -34,6 +34,13 @@ Dependencies
 * C++14 or higher,
 * [Zydis](https://github.com/zyantific/zydis)
 
+Build
+---
+Cmake
+```
+mkdir build
+cmake --build build
+```
 Usage
 ----
 ```bash
