@@ -661,7 +661,7 @@ namespace VM
 		ZydisRegister base = mem.base;
 		ZydisRegister index = mem.index;
 		BYTE scale = mem.scale;
-		bool hasDisplacement = mem.disp.has_displacement;
+		bool hasDisplacement = (mem.disp.size != 0);
 		long long displacement = mem.disp.value;
 
 		bool is64Bits = (base != ZYDIS_REGISTER_NONE && ZydisRegisterGetWidth(ZYDIS_MACHINE_MODE_LONG_64, base) == 64) ||
